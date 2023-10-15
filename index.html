@@ -5,34 +5,35 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Сайт визитка</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css"/>
 </head>
 <body>
     <header class="header">
         <div class="header-top">
-            <span class="logo">Vlados Volchkov</span>
+            <a href="" class="logo">Vlados Volchkov</a>
             <nav class="navigation">
                 <ul class="menu">
                     <li class="menu-element">
                         <a class="menu-element__link" href="">Home</a>
                     </li>
                     <li class="menu-element">
-                        <a class="menu-element__link" href=""> About</a>
+                        <a class="menu-element__link" href=""> Обо мне</a>
                     </li>
                     <li class="menu-element">
-                        <a class="menu-element__link" href="">Past Labs</a>
+                        <a class="menu-element__link" href="">Прошлые лабы</a>
                     </li>
                 </ul>
             </nav>
-            <div class="switcher">Ru/Eng</div>
         </div>
         <div class="header-center">
             <h1 class="name">Владислав Волчков</h1>
             <p class="description">Привет! Меня зовут Владислав. Я веб-разработчик,давайте знакомиться!</p>
         </div>
     </header>
-    <section class="about-me">
+    <section class="about-me" id="about-me">
         <div class="left">
-            <img src="" alt="Моя фотка" />
+            <img src="images/tHkoedwTrf4.webp" alt="Моя фотография" class="about-me__images" />
         </div>
         <div class="right">
             <p class="about-me__title">Волчков Владислав Максимович</p>
@@ -56,13 +57,9 @@
     </section>
     <section id="past-labs">
         <h2>Прошлые лабораторные работы</h2>
-        <button id="toggle-button">Показать/Скрыть</button>
-        <div id="labs-info" style="display: none;">
-            <ul>
-                <li>Лабораторная работа 1</li>
-                <li>Лабораторная работа 2</li>
-                <li>Лабораторная работа 3</li>
-            </ul>
+        <button id="toggleButton">Показать/Скрыть фото</button>
+        <div id="photoContainer" style="display: none;">
+            <img src="images/Screenshot_156.webp" alt="Фото">
         </div>
     </section>
 
@@ -84,5 +81,7 @@
         &copy; &nbsp;Волчков&nbsp;Владислав 2005&nbsp;-&nbsp;2023
     </p>
 </footer>
+<script src="js/main.js">;
+</script>
 </body>
 </html>
